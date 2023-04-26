@@ -1,0 +1,11 @@
+create database blogging_platform;
+
+use blogging_platform;
+
+CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  password_hash CHAR(60) NOT NULL
+);
+
