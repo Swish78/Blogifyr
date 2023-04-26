@@ -7,4 +7,4 @@ I built the data models using SQLAlchemy to define the structure of my data and 
 I created views, which were Python functions that handled HTTP requests from the user's browser and returned responses.
 I defined templates, which were HTML files that defined the layout and structure of my web pages.
 I implemented user authentication using the Flask-Login library to allow users to create and manage their own blog posts.
-Finally, I tested my application to make sure it worked correctly, and then deployed it to a web server or a cloud-based platform like Heroku.
+Finally, I tested my application to make sure it worked correctly, and then deployed it to a web server.
