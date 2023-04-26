@@ -1,0 +1,34 @@
+
+Users Table: This table will store user information such as usernames, email addresses, and encrypted passwords.
+    id (primary key)
+    username
+    email
+    password (encrypted)
+
+Posts Table: This table will store the blog posts written by users.
+    id (primary key)
+    title
+    content
+    created_at
+    updated_at
+    user_id (foreign key referencing the Users Table)
+
+Comments Table: This table will store the comments made by users on blog posts.
+    id (primary key)
+    content
+    created_at
+    post_id (foreign key referencing the Posts Table)
+    user_id (foreign key referencing the Users Table)
+
+Tags Table: This table will store tags assigned to each post.
+    id (primary key)
+    name
+    Post_Tags Table: This table will store the relationship between posts and tags.
+    id (primary key)
+    post_id (foreign key referencing the Posts Table)
+    tag_id (foreign key referencing the Tags Table)
+
+Followers Table: This table will store the relationship between users who are following each other.
+    id (primary key)
+    follower_id (foreign key referencing the Users Table)
+    followed_id (foreign key referencing the Users Table)
